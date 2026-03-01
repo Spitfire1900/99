@@ -359,7 +359,8 @@ end
 
 function _99.view_logs()
   local requests = _99_state.tracking.history
-  select_window(requests, function(idx)
+  local str_requests = Tracking.to_selectable_list(requests)
+  select_window(str_requests, function(idx)
     local r = requests[idx]
     local logs = Logger.logs_by_id(r.xid)
     if logs == nil then

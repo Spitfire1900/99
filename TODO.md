@@ -7,7 +7,17 @@
     track of marks after deserialization
 
 * filtering in `open`
-  * could add s, v, t for search, visual/vibe, and search.
+select input windows should also have a filter and a set of keys that can be set that trigger the filter.
+
+select { filter_keymap = { <key> = {desc = <desc>, cb = fun(x: str_items[]) -> number[] ... end } }
+
+that means that we cna filter out and return back the indices of the items we wish to keep
+
+that means when one of these are pressed, we need to
+
+we must also keep track of the total original items as well.  and must make the filters into kepmap items too
+
+
 
 * for vibe coding, i would like a way not only to transfer to a spot to review the
   code, but to toggle the diff view of the current item i am on.  This means

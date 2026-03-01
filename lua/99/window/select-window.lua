@@ -26,5 +26,4 @@ local function select_window(lines, cb)
   })
 end
 
-
 return select_window
