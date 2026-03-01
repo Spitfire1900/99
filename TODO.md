@@ -6,6 +6,9 @@
   * also some impliciation on deserialization.  we will need to make sure we keep
     track of marks after deserialization
 
+* filtering in `open`
+  * could add s, v, t for search, visual/vibe, and search.
+
 * for vibe coding, i would like a way not only to transfer to a spot to review the
   code, but to toggle the diff view of the current item i am on.  This means
   tracking is going to have to have an idea of "active" such that i cannot imagine what you are
