@@ -226,6 +226,9 @@ local _99 = {
 --- @param capture_content string[] | nil
 local function capture_prompt(cb, name, context, opts, capture_content)
   Window.capture_input(name, {
+    keymap = {
+      [":w"] = "submit",
+    },
     content = capture_content,
 
     --- @param ok boolean
